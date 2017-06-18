@@ -1,8 +1,8 @@
 <template>
-	<div>
+	<div id="foot">
 		<ul>
 			<li v-for="item in footerNav">
-				<router-link :to="'/'+item.route">{{item.name}}</router-link>
+				<router-link :to="'/home/'+item.route">{{item.name}}</router-link>
 			</li>
 		</ul>
 	</div>
@@ -23,5 +23,25 @@
 </script>
 
 <style lang="scss" scoped>
-	
+	#foot {
+		position: fixed;
+		left: 0px;
+		bottom: 0px;
+		width: 100%;
+		ul {
+			border-top: 1px solid #ddd;
+			height: 50px;
+			box-sizing: border-box;
+			line-height: 50px;
+			margin: 0px;
+			padding: 0px;
+			li {
+				width: 25%;
+				text-align: center;
+				display: inline-block;
+				list-style: none;
+				font-size: 0.75em;
+			}
+		}
+	}
 </style>

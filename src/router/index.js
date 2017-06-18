@@ -17,6 +17,10 @@
 import App from '../App';
 
 import home from '../page/home/home'
+import takeout from '../page/takeout/takeout'
+import search from '../page/search/search'
+import order from '../page/order/order'
+import my from '../page/my/my'
 
 export default [{
 	path: '/',
@@ -26,6 +30,21 @@ export default [{
 			    redirect: '/home',
 			},{
 				path: '/home',
-				component: home				
+				component: home,
+				children: [
+					{
+						path: 'takeout',
+						component: takeout
+					},{
+						path: 'search',
+						component: search
+					},{
+						path: 'order',
+						component: order
+					},{
+						path: 'my',
+						component: my
+					}
+				]
 			}]
 }]

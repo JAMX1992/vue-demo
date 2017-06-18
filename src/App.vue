@@ -10,13 +10,18 @@ export default {
 }
 </script>
 
-<style>
-/*#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}*/
+<style lang="scss">
+* {
+	margin: 0px;
+	padding: 0px;
+}
+html, body {
+	height: 100%;
+}
+#app {
+	height: 100%;
+	overflow: auto;
+	box-sizing: border-box;
+	padding: 10px 10px 50px 10px;
+}
 </style>
