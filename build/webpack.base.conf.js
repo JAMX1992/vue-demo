@@ -38,6 +38,14 @@ module.exports = {
         include: [resolve('src'), resolve('test')]
       },
       {
+        test: /\.css$/, // Only .css files
+        loader: 'style!css' // Run both loaders
+      },
+      {
+        test: /\.scss$/,
+        loader: 'style!css!sass'
+      },
+      {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
         loader: 'url-loader',
         options: {

@@ -17,7 +17,6 @@
 import App from '../App';
 
 import home from '../page/home/home'
-console.log(home)
 
 export default [{
 	path: '/',

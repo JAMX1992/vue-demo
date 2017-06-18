@@ -1,23 +1,27 @@
 <template>
-	<ul>
-		<li>
-			<router-link>
-				
-			</router-link>
-		</li>
-	</ul>
+	<div>
+		<ul>
+			<li v-for="item in footerNav">
+				<router-link :to="'/'+item.route">{{item.name}}</router-link>
+			</li>
+		</ul>
+	</div>
 </template>
 
 <script>
 	export default {
 		data(){
 			return {
-				footerNav:['外卖'，'搜索','订单','我的']
+				footerNav:[
+					{name:'外卖',route:'takeout'},
+					{name:'搜索',route:'search'},
+					{name:'订单',route:'order'},
+					{name:'我的',route:'my'}]
 			}
 		}
 	}
 </script>
 
-<style>
+<style lang="scss" scoped>
 	
 </style>
