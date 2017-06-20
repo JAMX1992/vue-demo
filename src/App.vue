@@ -22,6 +22,6 @@ html, body {
 	height: 100%;
 	overflow: auto;
 	box-sizing: border-box;
-	padding: 10px 10px 50px 10px;
+	padding: 40px 10px 50px 10px;
 }
 </style>

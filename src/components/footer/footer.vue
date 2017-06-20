@@ -12,6 +12,7 @@
 	export default {
 		data(){
 			return {
+				watch1:'',
 				footerNav:[
 					{name:'外卖',route:'takeout'},
 					{name:'搜索',route:'search'},
@@ -41,6 +42,17 @@
 				display: inline-block;
 				list-style: none;
 				font-size: 0.75em;
+				float: left;
+				a {
+					display: inline-block;
+					width: 100%;
+					height: 100%;
+					text-decoration: none;
+					color: #333;
+				}
+				a.router-link-active {
+					background: #f4f4f4;
+				}
 			}
 		}
 	}

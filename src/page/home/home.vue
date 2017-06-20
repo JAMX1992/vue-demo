@@ -1,19 +1,22 @@
 <template>
 	<div>
+		<vue-head></vue-head>
 		<router-view></router-view>
-		<foot></foot>
+		<vue-foot></vue-foot>
 	</div>
 </template>
 
 <script>
 	import foot from '../../components/footer/footer'
-	console.log(foot);
+	import head from '../../components/header/head'
+
 	export default {
 		data(){
 			return {};
 		},
 		components: {
-			foot
+			vueFoot: foot,
+			vueHead: head
 		}
 	}
 </script>
